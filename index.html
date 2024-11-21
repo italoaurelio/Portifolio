@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+    wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ítalo Aurélio</title>
+    <!-- <link rel="stylesheet" href="./Styles/index.css"> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body * {
+            font-family: "Inter", sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        body {
+            background-image: url('Styles/wallpaper.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 10px;
+        }
+
+        #profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px;
+
+        }
+
+        #img {
+            width: 112px;
+            height: 112px;
+            background-color: rgb(22, 22, 22);
+            border: 1px solid white;
+            border-radius: 50%;
+            transition: border 0.1s ease-out, transform 0.2s ease-out;
+        }
+
+        #img:hover {
+            border: 2px solid #cd47c2;
+            transform: scale(1.1);
+        }
+
+
+        #name {
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #buttons {
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            gap: 20px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFFFFF1A;
+            border: 1px solid white;
+            height: 56px;
+            width: 540px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-out, transform 0.2s ease-out;
+        }
+
+        .button:hover {
+            border: 2px solid #cd47c2;
+            transform: scale(1.03);
+            background-color: #ffffff63;
+            font-weight: bold;
+        }
+
+        #icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            gap: 30px;
+        }
+
+        .icon {
+            cursor: pointer;
+            color: white;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+            filter: invert(38%) sepia(82%) saturate(3700%) hue-rotate(275deg) brightness(80%) contrast(101%);
+            transition: transform 0.2s ease-out;
+        }
+
+        #made_by {
+            padding: 24px;
+        }
+
+        @media (max-width: 768px) {
+            #content {
+                gap: 15px;
+                padding: 8px;
+            }
+
+            #img {
+                width: 80px;
+                height: 80px;
+            }
+
+            #name {
+                font-size: 14px;
+            }
+
+            #buttons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .button {
+                height: 48px;
+                width: 110%;
+            }
+
+            #icons {
+                gap: 15px;
+            }
+
+            .icon {
+                width: 32px;
+                height: 32px;
+            }
+
+            #made_by {
+                font-size: 12px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="content">
+
+            <div id="profile">
+                <img src="Styles/italo.jpg" alt="Foto de Ítalo" id="img" title="Foto de Ítalo">
+                <div id="name">@<b>italoaurelio</b>.png</div>
+            </div>
+
+            <div id="buttons">
+                <div class="button"><a href="https://www.behance.net/italoaurelio1" target="blank">Portifólio Design
+                        Gráfico</a></div>
+                <div class="button"><a href="https://github.com/italoaurelio" target="blank">Portifólio Desenvolvedor
+                        (em breve)</a>
+                </div>
+                <div class="button"><a href="https://online.fliphtml5.com/tujgt/cekq/" target="blank">Currículo</a>
+                </div>
+                <div class="button"><a href="https://github.com/italoaurelio" target="blank">Projetos</a></div>
+            </div>
+
+            <div id="icons">
+                <a href="https://github.com/italoaurelio" target="_blank" title="GitHub">
+                    <img class="icon" src="./Styles/git.svg" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/italoaurelio.png/" target="_blank" title="Instagram">
+                    <img class="icon" src="./Styles/ig.svg" alt="Instagram">
+                </a>
+                <a href="https://br.linkedin.com/in/italoaurelio" target="_blank" title="LinkedIn">
+                    <img class="icon" src="./Styles/in.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/@italoaurelio6094" target="_blank" title="YouTube">
+                    <img class="icon" src="./Styles/youtube.svg" alt="YouTube">
+                </a>
+            </div>
+
+            <div id="made_by">Feito por Ítalo Aurélio</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

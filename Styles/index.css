@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body *{
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+
+}
+
+#img{
+    width: 112px;
+    height: 112px;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: border 0.1s ease-out, transform 0.2s ease-out;
+}
+
+#img:hover{
+    border: 2px solid #cd47c2;
+    transform: scale(1.1); 
+}
+
+
+#name{
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF1A;
+    border: 1px solid white;
+    height: 56px;
+    width: 540px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out, transform 0.2s ease-out;
+}
+
+.button:hover{
+    border: 2px solid #cd47c2;
+    transform: scale(1.03);
+    background-color: #ffffff63;
+    font-weight: bold;
+}
+
+#icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 30px;
+}
+
+.icon{
+    cursor: pointer;
+    color: white;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+    filter: invert(38%) sepia(82%) saturate(3700%) hue-rotate(275deg) brightness(80%) contrast(101%);
+    transition: transform 0.2s ease-out;
+}
+
+#made_by{
+    padding: 24px;
+}
+
+@media (max-width: 768px) {
+    #content {
+        gap: 15px;
+        padding: 8px;
+    }
+
+    #img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #name {
+        font-size: 14px;
+    }
+
+    #buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        height: 48px;
+        width: 110%;
+    }
+
+    #icons {
+        gap: 15px;
+    }
+
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    #made_by {
+        font-size: 12px;
+    }
+}
